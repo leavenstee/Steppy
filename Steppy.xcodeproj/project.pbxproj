@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BBE9C14CE806770A1D9B4C5 /* Pods_Steppy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2ADEF6ED12C87DCD8EAC42 /* Pods_Steppy.framework */; };
 		C39663601DFB728E008C0964 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396635F1DFB728E008C0964 /* AppDelegate.swift */; };
 		C39663621DFB728E008C0964 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39663611DFB728E008C0964 /* ViewController.swift */; };
 		C39663651DFB728E008C0964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39663631DFB728E008C0964 /* Main.storyboard */; };
@@ -14,6 +15,13 @@
 		C396636A1DFB728E008C0964 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39663681DFB728E008C0964 /* LaunchScreen.storyboard */; };
 		C39663751DFB728E008C0964 /* SteppyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39663741DFB728E008C0964 /* SteppyTests.swift */; };
 		C39663801DFB728E008C0964 /* SteppyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396637F1DFB728E008C0964 /* SteppyUITests.swift */; };
+		C396638E1DFB72B4008C0964 /* ChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396638D1DFB72B4008C0964 /* ChartVC.swift */; };
+		C39663901DFB73B8008C0964 /* DataTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396638F1DFB73B8008C0964 /* DataTableVC.swift */; };
+		C39663921DFB740C008C0964 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39663911DFB740C008C0964 /* Env.swift */; };
+		C39663941DFB7438008C0964 /* ExamplesDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39663931DFB7438008C0964 /* ExamplesDefaults.swift */; };
+		C39663961DFB7464008C0964 /* MainControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39663951DFB7464008C0964 /* MainControlVC.swift */; };
+		C39663981DFB7488008C0964 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39663971DFB7488008C0964 /* Toast.swift */; };
+		C396639A1DFB74B1008C0964 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39663991DFB74B1008C0964 /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		211F94CD1CAEF918600CCCED /* Pods-Steppy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steppy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Steppy/Pods-Steppy.release.xcconfig"; sourceTree = "<group>"; };
+		33A1AFEA36F94035B52DFA42 /* Pods-Steppy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steppy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Steppy/Pods-Steppy.debug.xcconfig"; sourceTree = "<group>"; };
+		AA2ADEF6ED12C87DCD8EAC42 /* Pods_Steppy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Steppy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C396635C1DFB728E008C0964 /* Steppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steppy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C396635F1DFB728E008C0964 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C39663611DFB728E008C0964 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,13 @@
 		C396637B1DFB728E008C0964 /* SteppyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteppyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C396637F1DFB728E008C0964 /* SteppyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppyUITests.swift; sourceTree = "<group>"; };
 		C39663811DFB728E008C0964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C396638D1DFB72B4008C0964 /* ChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartVC.swift; sourceTree = "<group>"; };
+		C396638F1DFB73B8008C0964 /* DataTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableVC.swift; sourceTree = "<group>"; };
+		C39663911DFB740C008C0964 /* Env.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		C39663931DFB7438008C0964 /* ExamplesDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesDefaults.swift; sourceTree = "<group>"; };
+		C39663951DFB7464008C0964 /* MainControlVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainControlVC.swift; sourceTree = "<group>"; };
+		C39663971DFB7488008C0964 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		C39663991DFB74B1008C0964 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BBE9C14CE806770A1D9B4C5 /* Pods_Steppy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BF0E93ADA59A8C59A4BD942 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33A1AFEA36F94035B52DFA42 /* Pods-Steppy.debug.xcconfig */,
+				211F94CD1CAEF918600CCCED /* Pods-Steppy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		93028ED2F0617E19D6713C46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA2ADEF6ED12C87DCD8EAC42 /* Pods_Steppy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C39663531DFB728E008C0964 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +117,8 @@
 				C39663731DFB728E008C0964 /* SteppyTests */,
 				C396637E1DFB728E008C0964 /* SteppyUITests */,
 				C396635D1DFB728E008C0964 /* Products */,
+				7BF0E93ADA59A8C59A4BD942 /* Pods */,
+				93028ED2F0617E19D6713C46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +137,13 @@
 			children = (
 				C396635F1DFB728E008C0964 /* AppDelegate.swift */,
 				C39663611DFB728E008C0964 /* ViewController.swift */,
+				C396638D1DFB72B4008C0964 /* ChartVC.swift */,
+				C396638F1DFB73B8008C0964 /* DataTableVC.swift */,
+				C39663911DFB740C008C0964 /* Env.swift */,
+				C39663931DFB7438008C0964 /* ExamplesDefaults.swift */,
+				C39663951DFB7464008C0964 /* MainControlVC.swift */,
+				C39663971DFB7488008C0964 /* Toast.swift */,
+				C39663991DFB74B1008C0964 /* ProfileVC.swift */,
 				C39663631DFB728E008C0964 /* Main.storyboard */,
 				C39663661DFB728E008C0964 /* Assets.xcassets */,
 				C39663681DFB728E008C0964 /* LaunchScreen.storyboard */,
@@ -132,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C39663841DFB728E008C0964 /* Build configuration list for PBXNativeTarget "Steppy" */;
 			buildPhases = (
+				6770195AC5E662B3EFB9D687 /* [CP] Check Pods Manifest.lock */,
 				C39663581DFB728E008C0964 /* Sources */,
 				C39663591DFB728E008C0964 /* Frameworks */,
 				C396635A1DFB728E008C0964 /* Resources */,
+				EDC41B3CA5418AE42A43C9AA /* [CP] Embed Pods Frameworks */,
+				C261BD28CB8559DD13C63D30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +305,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6770195AC5E662B3EFB9D687 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C261BD28CB8559DD13C63D30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Steppy/Pods-Steppy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDC41B3CA5418AE42A43C9AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Steppy/Pods-Steppy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C39663581DFB728E008C0964 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39663961DFB7464008C0964 /* MainControlVC.swift in Sources */,
+				C39663981DFB7488008C0964 /* Toast.swift in Sources */,
+				C39663941DFB7438008C0964 /* ExamplesDefaults.swift in Sources */,
+				C396639A1DFB74B1008C0964 /* ProfileVC.swift in Sources */,
+				C39663921DFB740C008C0964 /* Env.swift in Sources */,
+				C396638E1DFB72B4008C0964 /* ChartVC.swift in Sources */,
 				C39663621DFB728E008C0964 /* ViewController.swift in Sources */,
 				C39663601DFB728E008C0964 /* AppDelegate.swift in Sources */,
+				C39663901DFB73B8008C0964 /* DataTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +514,7 @@
 		};
 		C39663851DFB728E008C0964 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33A1AFEA36F94035B52DFA42 /* Pods-Steppy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D846Q7V7YL;
@@ -424,6 +528,7 @@
 		};
 		C39663861DFB728E008C0964 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 211F94CD1CAEF918600CCCED /* Pods-Steppy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D846Q7V7YL;

@@ -1,0 +1,48 @@
+PODS:
+  - CryptoSwift (0.6.6)
+  - SAConfettiView (0.1.8)
+  - SQLite.swift (0.11.1):
+    - SQLite.swift/standard (= 0.11.1)
+  - SQLite.swift/standard (0.11.1)
+  - SwiftCharts (0.5.1)
+
+DEPENDENCIES:
+  - CryptoSwift (from `https://github.com/krzyzanowskim/CryptoSwift`, branch `master`)
+  - SAConfettiView (from `https://github.com/sudeepag/SAConfettiView.git`)
+  - SQLite.swift (from `https://github.com/stephencelis/SQLite.swift.git`)
+  - SwiftCharts (from `https://github.com/i-schuetz/SwiftCharts.git`)
+
+EXTERNAL SOURCES:
+  CryptoSwift:
+    :branch: master
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+  SAConfettiView:
+    :git: https://github.com/sudeepag/SAConfettiView.git
+  SQLite.swift:
+    :git: https://github.com/stephencelis/SQLite.swift.git
+  SwiftCharts:
+    :git: https://github.com/i-schuetz/SwiftCharts.git
+
+CHECKOUT OPTIONS:
+  CryptoSwift:
+    :commit: edc94d480b66889a5401b8cf0b6e637a5ed370e3
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+  SAConfettiView:
+    :commit: 0ef5a3b090b1a4e9c2e9b7895a85ea104ca6ce74
+    :git: https://github.com/sudeepag/SAConfettiView.git
+  SQLite.swift:
+    :commit: bcc03e93d5dfbdb2e837d26c97b86053a36dc77d
+    :git: https://github.com/stephencelis/SQLite.swift.git
+  SwiftCharts:
+    :commit: 573432e377b00557759b36469d7203b34634ec92
+    :git: https://github.com/i-schuetz/SwiftCharts.git
+
+SPEC CHECKSUMS:
+  CryptoSwift: 5e857f6d8a91c41c92c7c6a6950a52434d8d35c2
+  SAConfettiView: c87031a2280659261b730fce3669fb10e73636ee
+  SQLite.swift: 9732332096ecdb499bc7bbe788dc27652acfe1db
+  SwiftCharts: 5c711f225e65bb967bf9ac952888670d461b80af
+
+PODFILE CHECKSUM: 6921c251deef3e2b06860dd01299a7342a81d239
+
+COCOAPODS: 1.1.1
