@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C39663601DFB728E008C0964 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396635F1DFB728E008C0964 /* AppDelegate.swift */; };
+		C39663621DFB728E008C0964 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39663611DFB728E008C0964 /* ViewController.swift */; };
+		C39663651DFB728E008C0964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39663631DFB728E008C0964 /* Main.storyboard */; };
+		C39663671DFB728E008C0964 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39663661DFB728E008C0964 /* Assets.xcassets */; };
+		C396636A1DFB728E008C0964 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39663681DFB728E008C0964 /* LaunchScreen.storyboard */; };
+		C39663751DFB728E008C0964 /* SteppyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39663741DFB728E008C0964 /* SteppyTests.swift */; };
+		C39663801DFB728E008C0964 /* SteppyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396637F1DFB728E008C0964 /* SteppyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C39663711DFB728E008C0964 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C39663541DFB728E008C0964 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C396635B1DFB728E008C0964;
+			remoteInfo = Steppy;
+		};
+		C396637C1DFB728E008C0964 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C39663541DFB728E008C0964 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C396635B1DFB728E008C0964;
+			remoteInfo = Steppy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C396635C1DFB728E008C0964 /* Steppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steppy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C396635F1DFB728E008C0964 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C39663611DFB728E008C0964 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C39663641DFB728E008C0964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C39663661DFB728E008C0964 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C39663691DFB728E008C0964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C396636B1DFB728E008C0964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C39663701DFB728E008C0964 /* SteppyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteppyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39663741DFB728E008C0964 /* SteppyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppyTests.swift; sourceTree = "<group>"; };
+		C39663761DFB728E008C0964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C396637B1DFB728E008C0964 /* SteppyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteppyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C396637F1DFB728E008C0964 /* SteppyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppyUITests.swift; sourceTree = "<group>"; };
+		C39663811DFB728E008C0964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C39663591DFB728E008C0964 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C396636D1DFB728E008C0964 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39663781DFB728E008C0964 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C39663531DFB728E008C0964 = {
+			isa = PBXGroup;
+			children = (
+				C396635E1DFB728E008C0964 /* Steppy */,
+				C39663731DFB728E008C0964 /* SteppyTests */,
+				C396637E1DFB728E008C0964 /* SteppyUITests */,
+				C396635D1DFB728E008C0964 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C396635D1DFB728E008C0964 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C396635C1DFB728E008C0964 /* Steppy.app */,
+				C39663701DFB728E008C0964 /* SteppyTests.xctest */,
+				C396637B1DFB728E008C0964 /* SteppyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C396635E1DFB728E008C0964 /* Steppy */ = {
+			isa = PBXGroup;
+			children = (
+				C396635F1DFB728E008C0964 /* AppDelegate.swift */,
+				C39663611DFB728E008C0964 /* ViewController.swift */,
+				C39663631DFB728E008C0964 /* Main.storyboard */,
+				C39663661DFB728E008C0964 /* Assets.xcassets */,
+				C39663681DFB728E008C0964 /* LaunchScreen.storyboard */,
+				C396636B1DFB728E008C0964 /* Info.plist */,
+			);
+			path = Steppy;
+			sourceTree = "<group>";
+		};
+		C39663731DFB728E008C0964 /* SteppyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C39663741DFB728E008C0964 /* SteppyTests.swift */,
+				C39663761DFB728E008C0964 /* Info.plist */,
+			);
+			path = SteppyTests;
+			sourceTree = "<group>";
+		};
+		C396637E1DFB728E008C0964 /* SteppyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C396637F1DFB728E008C0964 /* SteppyUITests.swift */,
+				C39663811DFB728E008C0964 /* Info.plist */,
+			);
+			path = SteppyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C396635B1DFB728E008C0964 /* Steppy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C39663841DFB728E008C0964 /* Build configuration list for PBXNativeTarget "Steppy" */;
+			buildPhases = (
+				C39663581DFB728E008C0964 /* Sources */,
+				C39663591DFB728E008C0964 /* Frameworks */,
+				C396635A1DFB728E008C0964 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Steppy;
+			productName = Steppy;
+			productReference = C396635C1DFB728E008C0964 /* Steppy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C396636F1DFB728E008C0964 /* SteppyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C39663871DFB728E008C0964 /* Build configuration list for PBXNativeTarget "SteppyTests" */;
+			buildPhases = (
+				C396636C1DFB728E008C0964 /* Sources */,
+				C396636D1DFB728E008C0964 /* Frameworks */,
+				C396636E1DFB728E008C0964 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C39663721DFB728E008C0964 /* PBXTargetDependency */,
+			);
+			name = SteppyTests;
+			productName = SteppyTests;
+			productReference = C39663701DFB728E008C0964 /* SteppyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C396637A1DFB728E008C0964 /* SteppyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C396638A1DFB728E008C0964 /* Build configuration list for PBXNativeTarget "SteppyUITests" */;
+			buildPhases = (
+				C39663771DFB728E008C0964 /* Sources */,
+				C39663781DFB728E008C0964 /* Frameworks */,
+				C39663791DFB728E008C0964 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C396637D1DFB728E008C0964 /* PBXTargetDependency */,
+			);
+			name = SteppyUITests;
+			productName = SteppyUITests;
+			productReference = C396637B1DFB728E008C0964 /* SteppyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C39663541DFB728E008C0964 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Steven Lee";
+				TargetAttributes = {
+					C396635B1DFB728E008C0964 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = D846Q7V7YL;
+						ProvisioningStyle = Automatic;
+					};
+					C396636F1DFB728E008C0964 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = D846Q7V7YL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C396635B1DFB728E008C0964;
+					};
+					C396637A1DFB728E008C0964 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = D846Q7V7YL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C396635B1DFB728E008C0964;
+					};
+				};
+			};
+			buildConfigurationList = C39663571DFB728E008C0964 /* Build configuration list for PBXProject "Steppy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C39663531DFB728E008C0964;
+			productRefGroup = C396635D1DFB728E008C0964 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C396635B1DFB728E008C0964 /* Steppy */,
+				C396636F1DFB728E008C0964 /* SteppyTests */,
+				C396637A1DFB728E008C0964 /* SteppyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C396635A1DFB728E008C0964 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C396636A1DFB728E008C0964 /* LaunchScreen.storyboard in Resources */,
+				C39663671DFB728E008C0964 /* Assets.xcassets in Resources */,
+				C39663651DFB728E008C0964 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C396636E1DFB728E008C0964 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39663791DFB728E008C0964 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C39663581DFB728E008C0964 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39663621DFB728E008C0964 /* ViewController.swift in Sources */,
+				C39663601DFB728E008C0964 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C396636C1DFB728E008C0964 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39663751DFB728E008C0964 /* SteppyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39663771DFB728E008C0964 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39663801DFB728E008C0964 /* SteppyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C39663721DFB728E008C0964 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C396635B1DFB728E008C0964 /* Steppy */;
+			targetProxy = C39663711DFB728E008C0964 /* PBXContainerItemProxy */;
+		};
+		C396637D1DFB728E008C0964 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C396635B1DFB728E008C0964 /* Steppy */;
+			targetProxy = C396637C1DFB728E008C0964 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C39663631DFB728E008C0964 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C39663641DFB728E008C0964 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C39663681DFB728E008C0964 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C39663691DFB728E008C0964 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C39663821DFB728E008C0964 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C39663831DFB728E008C0964 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C39663851DFB728E008C0964 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D846Q7V7YL;
+				INFOPLIST_FILE = Steppy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = leavenstee.Steppy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C39663861DFB728E008C0964 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D846Q7V7YL;
+				INFOPLIST_FILE = Steppy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = leavenstee.Steppy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C39663881DFB728E008C0964 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D846Q7V7YL;
+				INFOPLIST_FILE = SteppyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = leavenstee.SteppyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steppy.app/Steppy";
+			};
+			name = Debug;
+		};
+		C39663891DFB728E008C0964 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D846Q7V7YL;
+				INFOPLIST_FILE = SteppyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = leavenstee.SteppyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steppy.app/Steppy";
+			};
+			name = Release;
+		};
+		C396638B1DFB728E008C0964 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = D846Q7V7YL;
+				INFOPLIST_FILE = SteppyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = leavenstee.SteppyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Steppy;
+			};
+			name = Debug;
+		};
+		C396638C1DFB728E008C0964 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = D846Q7V7YL;
+				INFOPLIST_FILE = SteppyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = leavenstee.SteppyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Steppy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C39663571DFB728E008C0964 /* Build configuration list for PBXProject "Steppy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39663821DFB728E008C0964 /* Debug */,
+				C39663831DFB728E008C0964 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C39663841DFB728E008C0964 /* Build configuration list for PBXNativeTarget "Steppy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39663851DFB728E008C0964 /* Debug */,
+				C39663861DFB728E008C0964 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C39663871DFB728E008C0964 /* Build configuration list for PBXNativeTarget "SteppyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39663881DFB728E008C0964 /* Debug */,
+				C39663891DFB728E008C0964 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C396638A1DFB728E008C0964 /* Build configuration list for PBXNativeTarget "SteppyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C396638B1DFB728E008C0964 /* Debug */,
+				C396638C1DFB728E008C0964 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C39663541DFB728E008C0964 /* Project object */;
+}
