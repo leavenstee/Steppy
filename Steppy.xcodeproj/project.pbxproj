@@ -617,6 +617,7 @@
 				C39663861DFB728E008C0964 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C39663871DFB728E008C0964 /* Build configuration list for PBXNativeTarget "SteppyTests" */ = {
 			isa = XCConfigurationList;
@@ -625,6 +626,7 @@
 				C39663891DFB728E008C0964 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C396638A1DFB728E008C0964 /* Build configuration list for PBXNativeTarget "SteppyUITests" */ = {
 			isa = XCConfigurationList;
@@ -633,6 +635,7 @@
 				C396638C1DFB728E008C0964 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -188,9 +188,6 @@ class SecondVC: UIViewController {
                 self.view.makeToast("That has not happened yet!", duration: 3.0, position: .top)
             } else if check {
                 try! self.addHealthData(udate: udate!, wei: wei!, hr: hr!, ste: ste!)
-                let confettiView = SAConfettiView(frame: self.view.bounds)
-                self.view.addSubview(confettiView)
-                //confettiView.confettiOnTimer(sec: 4)
                 
             } else {
                 self.view.makeToast("You forgot some data!", duration: 3.0, position: .top)
@@ -208,6 +205,9 @@ class SecondVC: UIViewController {
             let insert = health.insert(uId <- username, date <- udate, uWeight <- wei, heartRate <- hr, steps <- ste)
             try! db.run(insert)
             self.view.makeToast("Added!", duration: 3.0, position: .top)
+            let confettiView = SAConfettiView(frame: self.view.bounds)
+            self.view.addSubview(confettiView)
+            confettiView.confettiOnTimer(sec: 4)
         }
         else{
             self.view.makeToast("Heart Rate Should Be Between 60-300!", duration: 3.0, position: .top)
