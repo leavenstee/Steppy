@@ -22,6 +22,7 @@
 		C39663961DFB7464008C0964 /* MainControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39663951DFB7464008C0964 /* MainControlVC.swift */; };
 		C39663981DFB7488008C0964 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39663971DFB7488008C0964 /* Toast.swift */; };
 		C396639A1DFB74B1008C0964 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39663991DFB74B1008C0964 /* ProfileVC.swift */; };
+		C396639C1DFDDAA6008C0964 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C396639B1DFDDAA6008C0964 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		C39663951DFB7464008C0964 /* MainControlVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainControlVC.swift; sourceTree = "<group>"; };
 		C39663971DFB7488008C0964 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		C39663991DFB74B1008C0964 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		C396639B1DFDDAA6008C0964 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		C396639D1DFDDB49008C0964 /* Steppy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steppy.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C396639C1DFDDAA6008C0964 /* HealthKit.framework in Frameworks */,
 				1BBE9C14CE806770A1D9B4C5 /* Pods_Steppy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +109,7 @@
 		93028ED2F0617E19D6713C46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C396639B1DFDDAA6008C0964 /* HealthKit.framework */,
 				AA2ADEF6ED12C87DCD8EAC42 /* Pods_Steppy.framework */,
 			);
 			name = Frameworks;
@@ -135,6 +140,7 @@
 		C396635E1DFB728E008C0964 /* Steppy */ = {
 			isa = PBXGroup;
 			children = (
+				C396639D1DFDDB49008C0964 /* Steppy.entitlements */,
 				C396635F1DFB728E008C0964 /* AppDelegate.swift */,
 				C39663611DFB728E008C0964 /* ViewController.swift */,
 				C396638D1DFB72B4008C0964 /* ChartVC.swift */,
@@ -243,6 +249,14 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = D846Q7V7YL;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					C396636F1DFB728E008C0964 = {
 						CreatedOnToolsVersion = 8.1;
@@ -517,6 +531,7 @@
 			baseConfigurationReference = 33A1AFEA36F94035B52DFA42 /* Pods-Steppy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Steppy/Steppy.entitlements;
 				DEVELOPMENT_TEAM = D846Q7V7YL;
 				INFOPLIST_FILE = Steppy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -531,6 +546,7 @@
 			baseConfigurationReference = 211F94CD1CAEF918600CCCED /* Pods-Steppy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Steppy/Steppy.entitlements;
 				DEVELOPMENT_TEAM = D846Q7V7YL;
 				INFOPLIST_FILE = Steppy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
