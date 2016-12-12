@@ -283,7 +283,7 @@ class SecondVC: UIViewController {
     }
     
     func toInfoPage(sender:UIButton){
-        let destination = UserInfoVC() // Your destination
+        let destination = ProfileVC() // Your destination
         self.navigationController?.pushViewController(destination, animated: true)
     }
     
