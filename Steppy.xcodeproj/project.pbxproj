@@ -68,6 +68,7 @@
 		C39663991DFB74B1008C0964 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C396639B1DFDDAA6008C0964 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		C396639D1DFDDB49008C0964 /* Steppy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steppy.entitlements; sourceTree = "<group>"; };
+		C3A716E71DFF043A00DE6D34 /* Steppy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steppy.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +141,7 @@
 		C396635E1DFB728E008C0964 /* Steppy */ = {
 			isa = PBXGroup;
 			children = (
+				C3A716E71DFF043A00DE6D34 /* Steppy.entitlements */,
 				C396639D1DFDDB49008C0964 /* Steppy.entitlements */,
 				C396635F1DFB728E008C0964 /* AppDelegate.swift */,
 				C39663611DFB728E008C0964 /* ViewController.swift */,
