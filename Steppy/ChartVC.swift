@@ -55,7 +55,6 @@ class ChartVC: UIViewController {
     
     func setPoints(){
         var count = 1.0
-        var curDate = NSDate()
         points.removeAll()
         goal.removeAll()
         maxData = 0;

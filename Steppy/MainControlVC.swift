@@ -253,14 +253,14 @@ class SecondVC: UIViewController {
             
             let calendar = Calendar.current
             let twoDaysAgo = calendar.date(byAdding: .day, value: -1, to: Date())
-            var type = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)
+            let type = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)
             let startDate = twoDaysAgo
             let interval = NSDateComponents()
             interval.day = 1
             
             let predicate = HKQuery.predicateForSamples(withStart: startDate! as Date, end: NSDate() as Date, options: .strictStartDate)
             //Steps
-            var query = HKStatisticsCollectionQuery(quantityType: type!, quantitySamplePredicate: predicate, options: [.cumulativeSum], anchorDate: NSDate() as Date, intervalComponents:interval as DateComponents)
+            let query = HKStatisticsCollectionQuery(quantityType: type!, quantitySamplePredicate: predicate, options: [.cumulativeSum], anchorDate: NSDate() as Date, intervalComponents:interval as DateComponents)
             
             query.initialResultsHandler = { query, results, error in
                 let endDate = NSDate()
@@ -294,14 +294,14 @@ class SecondVC: UIViewController {
             // Add your HealthKit code here
             let calendar = Calendar.current
             let twoDaysAgo = calendar.date(byAdding: .day, value: -1, to: Date())
-            var type = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate)
+            let type = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate)
             let startDate = twoDaysAgo
             let interval = NSDateComponents()
             interval.day = 1
             
             let predicate = HKQuery.predicateForSamples(withStart: startDate! as Date, end: NSDate() as Date, options: .strictStartDate)
             //Steps
-            var query = HKStatisticsCollectionQuery(quantityType: type!, quantitySamplePredicate: predicate, options: .discreteAverage, anchorDate: NSDate() as Date, intervalComponents:interval as DateComponents)
+            let query = HKStatisticsCollectionQuery(quantityType: type!, quantitySamplePredicate: predicate, options: .discreteAverage, anchorDate: NSDate() as Date, intervalComponents:interval as DateComponents)
             
             query.initialResultsHandler = { query, results, error in
                 let endDate = NSDate()
