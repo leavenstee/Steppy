@@ -68,7 +68,6 @@
 		C39663991DFB74B1008C0964 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C396639B1DFDDAA6008C0964 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		C396639D1DFDDB49008C0964 /* Steppy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steppy.entitlements; sourceTree = "<group>"; };
-		C3A716E71DFF043A00DE6D34 /* Steppy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steppy.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +115,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C37DDE181E003A440096C918 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C39663611DFB728E008C0964 /* ViewController.swift */,
+				C39663951DFB7464008C0964 /* MainControlVC.swift */,
+				C396638F1DFB73B8008C0964 /* DataTableVC.swift */,
+				C396638D1DFB72B4008C0964 /* ChartVC.swift */,
+				C39663991DFB74B1008C0964 /* ProfileVC.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C37DDE191E003A840096C918 /* Objective */ = {
+			isa = PBXGroup;
+			children = (
+				C396636B1DFB728E008C0964 /* Info.plist */,
+				C396639D1DFDDB49008C0964 /* Steppy.entitlements */,
+				C396635F1DFB728E008C0964 /* AppDelegate.swift */,
+				C39663911DFB740C008C0964 /* Env.swift */,
+				C39663931DFB7438008C0964 /* ExamplesDefaults.swift */,
+				C39663971DFB7488008C0964 /* Toast.swift */,
+			);
+			name = Objective;
+			sourceTree = "<group>";
+		};
 		C39663531DFB728E008C0964 = {
 			isa = PBXGroup;
 			children = (
@@ -141,21 +165,11 @@
 		C396635E1DFB728E008C0964 /* Steppy */ = {
 			isa = PBXGroup;
 			children = (
-				C3A716E71DFF043A00DE6D34 /* Steppy.entitlements */,
-				C396639D1DFDDB49008C0964 /* Steppy.entitlements */,
-				C396635F1DFB728E008C0964 /* AppDelegate.swift */,
-				C39663611DFB728E008C0964 /* ViewController.swift */,
-				C396638D1DFB72B4008C0964 /* ChartVC.swift */,
-				C396638F1DFB73B8008C0964 /* DataTableVC.swift */,
-				C39663911DFB740C008C0964 /* Env.swift */,
-				C39663931DFB7438008C0964 /* ExamplesDefaults.swift */,
-				C39663951DFB7464008C0964 /* MainControlVC.swift */,
-				C39663971DFB7488008C0964 /* Toast.swift */,
-				C39663991DFB74B1008C0964 /* ProfileVC.swift */,
+				C37DDE191E003A840096C918 /* Objective */,
+				C37DDE181E003A440096C918 /* Views */,
 				C39663631DFB728E008C0964 /* Main.storyboard */,
 				C39663661DFB728E008C0964 /* Assets.xcassets */,
 				C39663681DFB728E008C0964 /* LaunchScreen.storyboard */,
-				C396636B1DFB728E008C0964 /* Info.plist */,
 			);
 			path = Steppy;
 			sourceTree = "<group>";

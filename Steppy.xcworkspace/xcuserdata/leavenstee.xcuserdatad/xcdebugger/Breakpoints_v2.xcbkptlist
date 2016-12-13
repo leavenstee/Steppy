@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "263"
             endingLineNumber = "263"
-            landmarkName = "getStepsFromHealthKit()"
+            landmarkName = "getHeartRateFromHealthKit()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Steppy/ProfileVC.swift"
-            timestampString = "503303014.787752"
+            timestampString = "503332005.634754"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "loadUserGuide(sender:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -19,7 +19,7 @@ class DataTableVC: UIViewController,UISearchResultsUpdating, UITableViewDelegate
         healthTable.delegate      =   self
         healthTable.dataSource    =   self
         healthTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Stats", style: .plain, target: self, action: #selector(statTap))
+        
         self.resultSearchController = ({
             let controller = UISearchController(searchResultsController: nil)
             controller.searchResultsUpdater = self
@@ -155,11 +155,7 @@ class DataTableVC: UIViewController,UISearchResultsUpdating, UITableViewDelegate
         }
         
     }
-    
-    func statTap(sender:UIButton){
-        // REMOVE
-    }
-    
+
     func updateRow(path: Int, colect:[UITextField]) {
         let alice = health.filter(id == ids[path])
         try! db.run(alice.update(date <- colect[0].text!))
