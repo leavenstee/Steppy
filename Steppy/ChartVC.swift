@@ -42,6 +42,7 @@ class ChartVC: UIViewController {
             return s1.date < s2.date
         })
         var sorted_array = [(0.0,0.0)]
+        sorted_array.removeAll()
         var c = 1
         for h in try! sorted_points{
             sorted_array.append((Double(c),h.element))
