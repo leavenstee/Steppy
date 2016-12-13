@@ -40,7 +40,7 @@ class ProfileVC: UIViewController {
         genderLbl.center = CGPoint(x: 160, y: 200)
         bmiStatusLbl.center = CGPoint(x: 160, y: 250)
         stepTotalLbl.center = CGPoint(x: 160, y: 300)
-        userGuideBtn.center = CGPoint(x: 160, y: 350)
+        userGuideBtn.center = CGPoint(x: view.frame.width/2-100, y: view.frame.height-50)
         
         // Set Label Title
         nameLabel.text = uName

@@ -249,7 +249,7 @@
 				TargetAttributes = {
 					C396635B1DFB728E008C0964 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 6967A64MQ3;
+						DevelopmentTeam = D846Q7V7YL;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
@@ -534,10 +534,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Steppy/Steppy.entitlements;
-				DEVELOPMENT_TEAM = 6967A64MQ3;
+				DEVELOPMENT_TEAM = D846Q7V7YL;
 				INFOPLIST_FILE = Steppy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-PRODUCT-BUNDLE-IDENTIFIER";
+				PRODUCT_BUNDLE_IDENTIFIER = leavenstee.Steppy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -549,10 +549,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Steppy/Steppy.entitlements;
-				DEVELOPMENT_TEAM = 6967A64MQ3;
+				DEVELOPMENT_TEAM = D846Q7V7YL;
 				INFOPLIST_FILE = Steppy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-PRODUCT-BUNDLE-IDENTIFIER";
+				PRODUCT_BUNDLE_IDENTIFIER = leavenstee.Steppy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
