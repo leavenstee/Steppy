@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BBE9C14CE806770A1D9B4C5 /* Pods_Steppy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2ADEF6ED12C87DCD8EAC42 /* Pods_Steppy.framework */; };
+		C37DDE1B1E00859F0096C918 /* SteppyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C37DDE1A1E00859F0096C918 /* SteppyIcon.png */; };
 		C39663601DFB728E008C0964 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396635F1DFB728E008C0964 /* AppDelegate.swift */; };
 		C39663621DFB728E008C0964 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39663611DFB728E008C0964 /* ViewController.swift */; };
 		C39663651DFB728E008C0964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39663631DFB728E008C0964 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		211F94CD1CAEF918600CCCED /* Pods-Steppy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steppy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Steppy/Pods-Steppy.release.xcconfig"; sourceTree = "<group>"; };
 		33A1AFEA36F94035B52DFA42 /* Pods-Steppy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steppy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Steppy/Pods-Steppy.debug.xcconfig"; sourceTree = "<group>"; };
 		AA2ADEF6ED12C87DCD8EAC42 /* Pods_Steppy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Steppy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37DDE1A1E00859F0096C918 /* SteppyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SteppyIcon.png; sourceTree = "<group>"; };
 		C396635C1DFB728E008C0964 /* Steppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steppy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C396635F1DFB728E008C0964 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C39663611DFB728E008C0964 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		C37DDE191E003A840096C918 /* Objective */ = {
 			isa = PBXGroup;
 			children = (
+				C37DDE1A1E00859F0096C918 /* SteppyIcon.png */,
 				C396636B1DFB728E008C0964 /* Info.plist */,
 				C396639D1DFDDB49008C0964 /* Steppy.entitlements */,
 				C396635F1DFB728E008C0964 /* AppDelegate.swift */,
@@ -316,6 +319,7 @@
 				C396636A1DFB728E008C0964 /* LaunchScreen.storyboard in Resources */,
 				C39663671DFB728E008C0964 /* Assets.xcassets in Resources */,
 				C39663651DFB728E008C0964 /* Main.storyboard in Resources */,
+				C37DDE1B1E00859F0096C918 /* SteppyIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

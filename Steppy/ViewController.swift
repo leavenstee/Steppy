@@ -115,6 +115,7 @@ class ViewController: UIViewController {
         // Welcome Back Label
         var userFNAME = ""
         for user in try! db.prepare(users) {
+            
             print("id: \(user[email]), name: \(user[fName])")
             username = user[email]
             userFNAME = user[fName]
@@ -122,10 +123,12 @@ class ViewController: UIViewController {
             pass = user[password]
             globalWeight = Int(user[weight])
             //print (pass)
-            autoLogin()
+        
+            
             
         }
         if (userFNAME != ""){
+            autoLogin()
             welcomeLbl = UILabel(frame: CGRect(x: centerX-70, y: centerY-centerY/6, width: 300, height: 100))
             welcomeLbl.text = "Welcome Back \(userFNAME)"
             welcomeLbl.textColor = _fontColor
@@ -322,7 +325,6 @@ class ViewController: UIViewController {
                 print ("Steps:")
                 print (step)
                 avgStepData = Int(step)
-                
                 
             } else {
                 self.view.makeToast("Wrong Credentials", duration: 3.0, position: .top)
