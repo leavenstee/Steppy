@@ -13,8 +13,9 @@ import SQLite
 class ChartVC: UIViewController {
     
     fileprivate var chart: Chart? // arc
-    var points = [(0.0,0.0)]
+    var points = [(Data())]
     //    var avgpoints = [(0.0,0.0)]
+    var temp_points = [(0.0,0.0)]
     var goal = [(0.0,0.0)]
     var maxData = 0
     var totalCnt = 0
@@ -37,13 +38,22 @@ class ChartVC: UIViewController {
             yAxisLabelSettings: ExamplesDefaults.labelSettings.defaultVertical()
         )
         
+        let sorted_points = points.sorted(by: { (s1: Data, s2 : Data) -> Bool in
+            return s1.date < s2.date
+        })
+        var sorted_array = [(0.0,0.0)]
+        var c = 1
+        for h in try! sorted_points{
+            sorted_array.append((Double(c),h.element))
+            c += 1
+        }
         let chart = LineChart(
             frame: ExamplesDefaults.chartFrame(self.view.bounds),
             chartConfig: chartConfig,
             xTitle: "Past \(totalCnt-1) Days",
             yTitle: "Data",
             lines: [
-                (chartPoints: points, color: UIColor.red),(chartPoints: goal, color: UIColor.blue)
+                (chartPoints: sorted_array, color: UIColor.red),(chartPoints: goal, color: UIColor.blue)
             ]
         )
         
@@ -66,8 +76,12 @@ class ChartVC: UIViewController {
                     if(Int(h[steps]) > maxData || Int(h[steps]) == nil){
                         maxData = Int(h[steps]+1000)
                     }
+                    var temp = Data()
+                    temp.date = h[date]
+                    temp.element = Double(h[steps])
                     
-                    points.append((count,Double(h[steps])))
+                    //points.append((count,temp.date,Double(temp.element)))
+                    points.append(temp)
                     goal.append((count,Double(avgStepData)))
                     
                     count += 1;
@@ -80,7 +94,12 @@ class ChartVC: UIViewController {
                     if(Int(h[uWeight]) > maxData || Int(h[uWeight]) == nil){
                         maxData = Int(h[uWeight]+10)
                     }
-                    points.append((count,Double(h[uWeight])))
+                    var temp = Data()
+                    temp.date = h[date]
+                    temp.element = Double(h[uWeight])
+                    
+                    //points.append((count,temp.date,Double(h[uWeight])))
+                    points.append(temp)
                     count += 1;
                     
                 }
@@ -92,8 +111,12 @@ class ChartVC: UIViewController {
                     if(Int(h[heartRate]) > maxData || Int(h[heartRate]) == nil){
                         maxData = Int(h[heartRate]+10)
                     }
-                    
-                    points.append((count,Double(h[heartRate])))
+                    var temp = Data()
+                    temp.date = h[date]
+                    temp.element = Double(h[heartRate])
+
+                    //points.append((count,temp.date,Double(h[heartRate])))
+                    points.append(temp)
                     goal.append((count,Double(avgHRData)))
                     count += 1;
                 }
@@ -103,4 +126,9 @@ class ChartVC: UIViewController {
         
     }
     
+}
+
+struct Data{
+    var date = ""
+    var element = 0.0;
 }
