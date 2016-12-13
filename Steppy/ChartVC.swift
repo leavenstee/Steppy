@@ -80,8 +80,6 @@ class ChartVC: UIViewController {
                     var temp = Data()
                     temp.date = h[date]
                     temp.element = Double(h[steps])
-                    
-                    //points.append((count,temp.date,Double(temp.element)))
                     points.append(temp)
                     goal.append((count,Double(avgStepData)))
                     
@@ -98,8 +96,6 @@ class ChartVC: UIViewController {
                     var temp = Data()
                     temp.date = h[date]
                     temp.element = Double(h[uWeight])
-                    
-                    //points.append((count,temp.date,Double(h[uWeight])))
                     points.append(temp)
                     count += 1;
                     
@@ -116,7 +112,6 @@ class ChartVC: UIViewController {
                     temp.date = h[date]
                     temp.element = Double(h[heartRate])
 
-                    //points.append((count,temp.date,Double(h[heartRate])))
                     points.append(temp)
                     goal.append((count,Double(avgHRData)))
                     count += 1;

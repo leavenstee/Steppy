@@ -50,7 +50,7 @@ let _fontColor = UIColor(red:0.05, green:0.28, blue:0.38, alpha:1.0)
 let _accentColor = UIColor(red:0.62, green:0.96, blue:0.81, alpha:1.0)
 let _backgroundColor = UIColor(red:0.96, green:0.93, blue:0.93, alpha:1.0)
 
-/////////////
+//////////
 // USER //
 //////////
 var username = ""
@@ -64,9 +64,6 @@ class ViewController: UIViewController {
     ///////////
     //GLOBALS//
     ///////////
-    
-    
-    
     // Buttons //
     var loginBtn: UIButton!
     var createBtn: UIButton!
@@ -78,12 +75,8 @@ class ViewController: UIViewController {
     ///////////////////
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
         // find db print out the path
-        print("\(path)/database.db")
-        
+        // print("\(path)/database.db")
         //DB
         createTables()
         
@@ -445,8 +438,9 @@ func avgHeartRate() -> Int64 {
     }
     return Int64(hr)
 }
-
-//Average Steps
+///////////////////
+// Average Steps //
+///////////////////
 
 func avgSteps() -> Int64 {
     var steps = 0
@@ -469,7 +463,9 @@ func avgSteps() -> Int64 {
     }
     return Int64(steps)
 }
-
+////////////////////
+// Register LOCAL //
+////////////////////
 func registerLocal() {
     let center = UNUserNotificationCenter.current()
     
@@ -481,7 +477,9 @@ func registerLocal() {
         }
     }
 }
-
+////////////////////
+// Schedule Local //
+////////////////////
 func scheduleLocal() {
     print ("DOES IT GET HERE????")
     let center = UNUserNotificationCenter.current()

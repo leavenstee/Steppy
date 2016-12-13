@@ -151,6 +151,7 @@ class SecondVC: UIViewController {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "dd-MM-yyyy"
             let dateDED = dateFormatter.date(from: udate!)
+            // Check For future Day
             if (dateDED?.compare(NSDate() as Date) == ComparisonResult.orderedDescending) {
                 self.view.makeToast("That has not happened yet!", duration: 3.0, position: .top)
             } else if check {
@@ -181,19 +182,23 @@ class SecondVC: UIViewController {
             else{
                 self.view.makeToast("Enter a Valid Date DD-MM-YYYY", duration: 3.0, position: .top)
             }
-
-            
         }
         else{
             self.view.makeToast("Heart Rate Should Be Between 60-300!", duration: 3.0, position: .top)
         }
         
     }
+    ////////////////////////
+    // Display Data Table //
+    ////////////////////////
     
     func displayDataTable(sender:UIButton){
         let destination = DataTableVC() // Your destination
         self.navigationController?.pushViewController(destination, animated: true)
     }
+    ///////////////////
+    // Display Chart //
+    ///////////////////
     
     func displayChart(sender:UIButton){
         chartType = sender.tag
@@ -201,6 +206,9 @@ class SecondVC: UIViewController {
         self.navigationController?.pushViewController(destination, animated: true)
     }
     
+    ///////////////////////
+    // Enable Healht Kit //
+    ///////////////////////
     func enableHealthKit() {
         var readTypes = Set<HKObjectType>()
         readTypes.insert(HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!)
