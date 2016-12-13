@@ -17,9 +17,7 @@ var curSteps = 0;
 var curHR = 0;
 
 class SecondVC: UIViewController {
-    ///////////
-    //GLOBALS//
-    ///////////
+    // Locals
     let healthKitStore = HKHealthStore()
     
     
