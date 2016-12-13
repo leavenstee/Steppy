@@ -202,12 +202,19 @@ class SecondVC: UIViewController {
     
     func addHealthData(udate:String,wei:Double,hr:Int64,ste:Int64){
         if(hr >= 60 && hr <= 300){
-            let insert = health.insert(uId <- username, date <- udate, uWeight <- wei, heartRate <- hr, steps <- ste)
-            try! db.run(insert)
-            self.view.makeToast("Added!", duration: 3.0, position: .top)
-            let confettiView = SAConfettiView(frame: self.view.bounds)
-            self.view.addSubview(confettiView)
-            confettiView.confettiOnTimer(sec: 4)
+            if(udate.characters.count == 10){
+                let insert = health.insert(uId <- username, date <- udate, uWeight <- wei, heartRate <- hr, steps <- ste)
+                try! db.run(insert)
+                self.view.makeToast("Added!", duration: 3.0, position: .top)
+                let confettiView = SAConfettiView(frame: self.view.bounds)
+                self.view.addSubview(confettiView)
+                confettiView.confettiOnTimer(sec: 4)
+            }
+            else{
+                self.view.makeToast("Enter a Valid Date DD-MM-YYYY", duration: 3.0, position: .top)
+            }
+
+            
         }
         else{
             self.view.makeToast("Heart Rate Should Be Between 60-300!", duration: 3.0, position: .top)

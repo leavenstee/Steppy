@@ -215,7 +215,7 @@ class ViewController: UIViewController {
             
             username = (alertController.textFields?[2].text!)!
             pass = (alertController.textFields?[3].text)!
-            self.login()
+            
             
         }
         alertController.addAction(OKAction)
@@ -302,6 +302,7 @@ class ViewController: UIViewController {
         let insert = users.insert(email <- _email,fName <- _first,lName <- _last, password <- _password.md5(), height <- _height, weight <- _weight, age <- _age, sex <- _sex)
         try! db.run(insert)
         registerLocal()
+        self.view.makeToast("Welcome to Steppy! Login to track your health", duration: 3.0, position: .top)
         
     }
     
@@ -331,6 +332,7 @@ class ViewController: UIViewController {
                 
                 
             } else {
+                self.view.makeToast("Wrong Credentials", duration: 3.0, position: .top)
                 print("ERROR LOGING")
             }
         }
