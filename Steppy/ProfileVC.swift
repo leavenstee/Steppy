@@ -33,13 +33,14 @@ class ProfileVC: UIViewController {
         let genderLbl = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
         let bmiStatusLbl = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
         let stepTotalLbl = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-        
+        let userGuideBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
         
         nameLabel.center = CGPoint(x: 160, y: 100)
         ageLbl.center = CGPoint(x: 160, y: 150)
         genderLbl.center = CGPoint(x: 160, y: 200)
         bmiStatusLbl.center = CGPoint(x: 160, y: 250)
         stepTotalLbl.center = CGPoint(x: 160, y: 300)
+        userGuideBtn.center = CGPoint(x: 160, y: 350)
         
         // Set Label Title
         nameLabel.text = uName
@@ -47,6 +48,8 @@ class ProfileVC: UIViewController {
         genderLbl.text = uSex
         bmiStatusLbl.text = uBMI
         stepTotalLbl.text = stepTotal
+        userGuideBtn.setTitle("User Guide", for: .normal)
+        userGuideBtn.setTitleColor(_fontColor, for: .normal)
         
         nameLabel.textColor = _fontColor
         genderLbl.textColor = _fontColor
@@ -55,16 +58,28 @@ class ProfileVC: UIViewController {
         stepTotalLbl.textColor = _fontColor
         
         
+        // Set button target
+        userGuideBtn.addTarget(self, action: #selector(loadUserGuide(sender:)), for: .touchUpInside)
         // add to view
         view.addSubview(nameLabel)
         view.addSubview(ageLbl)
         view.addSubview(genderLbl)
         view.addSubview(bmiStatusLbl)
         view.addSubview(stepTotalLbl)
+        view.addSubview(userGuideBtn)
         
         
         
         
+    }
+    
+    func loadUserGuide(sender:UIButton){
+        print ("GOT IT")
+        let webView = UIWebView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        let url = NSURL (string: "http://www.leavenstee.me");
+        let requestObj = NSURLRequest(url: url! as URL);
+        webView.loadRequest(requestObj as URLRequest);
+        view.addSubview(webView)
     }
     
     func loadDBToLocals() {
