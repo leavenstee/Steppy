@@ -49,7 +49,7 @@ class ProfileVC: UIViewController {
         bmiStatusLbl.text = uBMI
         stepTotalLbl.text = stepTotal
         userGuideBtn.setTitle("User Guide", for: .normal)
-        userGuideBtn.setTitleColor(_fontColor, for: .normal)
+        userGuideBtn.setTitleColor(_fontColor, for: .normal)    
         
         nameLabel.textColor = _fontColor
         genderLbl.textColor = _fontColor
@@ -76,7 +76,7 @@ class ProfileVC: UIViewController {
     func loadUserGuide(sender:UIButton){
         print ("GOT IT")
         let webView = UIWebView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
-        let url = NSURL (string: "http://www.leavenstee.me");
+        let url = NSURL (string: "http://leavenstee.me/images/SteppyUserManual.pdf");
         let requestObj = NSURLRequest(url: url! as URL);
         webView.loadRequest(requestObj as URLRequest);
         view.addSubview(webView)
