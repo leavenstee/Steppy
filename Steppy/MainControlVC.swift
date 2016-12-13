@@ -170,7 +170,7 @@ class SecondVC: UIViewController {
     // ADD HEALTH DATA //
     /////////////////////
     func addHealthData(udate:String,wei:Double,hr:Int64,ste:Int64){
-        if(hr >= 60 && hr <= 300){
+        if(hr >= 60 && hr <= 220){
             if(udate.characters.count == 10){
                 let insert = health.insert(uId <- username, date <- udate, uWeight <- wei, heartRate <- hr, steps <- ste)
                 try! db.run(insert)
@@ -184,7 +184,7 @@ class SecondVC: UIViewController {
             }
         }
         else{
-            self.view.makeToast("Heart Rate Should Be Between 60-300!", duration: 3.0, position: .top)
+            self.view.makeToast("Heart Rate Should Be Between 60-220!", duration: 3.0, position: .top)
         }
         
     }
